@@ -25,7 +25,7 @@ export function AboutSection() {
                 className="object-cover"
               />
             </div>
-            <div className="bg-primary text-primary-foreground absolute -right-6 -bottom-6 rounded p-6">
+            <div className="bg-primary text-primary-foreground absolute -right-2 -bottom-6 rounded p-6">
               <p className="text-4xl font-bold">20+</p>
               <p className="text-sm font-medium">Years of Excellence</p>
             </div>
