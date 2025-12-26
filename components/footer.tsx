@@ -26,7 +26,6 @@ const navigation = {
   social: [
     { name: 'Facebook', href: '#', icon: Facebook },
     { name: 'Instagram', href: '#', icon: Instagram },
-    { name: 'Twitter', href: '#', icon: Twitter },
     { name: 'YouTube', href: '#', icon: Youtube },
   ],
 };
@@ -34,7 +33,7 @@ const navigation = {
 export function Footer() {
   return (
     <footer className="bg-card border-border border-t">
-      <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8 lg:py-16">
+      <div className="mx-auto max-w-7xl p-12 px-4 lg:px-8 lg:pt-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -103,7 +102,7 @@ export function Footer() {
               </li>
               <li className="text-muted-foreground flex gap-3 text-sm">
                 <Mail className="text-primary h-5 w-5 shrink-0" />
-                <span>info@ashrafsquash.com</span>
+                <span>info@squashter.com</span>
               </li>
             </ul>
           </div>

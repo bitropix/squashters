@@ -41,7 +41,7 @@ export function FAQSection() {
 
   return (
     <section className="bg-background py-24">
-      <div className="mx-auto max-w-3xl px-4 lg:px-8">
+      <div className="mx-auto max-w-6xl px-4 lg:px-8">
         <div className="mb-12 text-center">
           <p className="text-primary mb-4 text-sm font-medium tracking-widest uppercase">FAQs</p>
           <h2 className="text-foreground text-3xl font-bold tracking-tight text-balance sm:text-4xl">
@@ -54,7 +54,7 @@ export function FAQSection() {
             <div key={index} className="bg-card border-border overflow-hidden rounded border">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="flex w-full items-center justify-between p-5 text-left"
+                className="flex w-full cursor-pointer items-center justify-between p-5 text-left"
               >
                 <span className="text-foreground pr-4 font-medium">{faq.question}</span>
                 <ChevronDown

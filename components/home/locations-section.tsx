@@ -54,7 +54,7 @@ export function LocationsSection() {
               key={location.name}
               className="group bg-card border-border hover:border-primary/50 overflow-hidden rounded border transition-colors"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-4/3 overflow-hidden">
                 <Image
                   src={location.image || '/placeholder.svg'}
                   alt={`${location.name} facility`}

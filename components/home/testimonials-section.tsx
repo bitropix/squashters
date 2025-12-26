@@ -56,8 +56,8 @@ export function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="relative mx-auto max-w-4xl">
-          <div className="bg-background border-border rounded border p-8 md:p-12">
+        <div className="relative mx-auto max-w-6xl">
+          <div className="bg-background border-border rounded border-2 p-8 md:p-12">
             <Quote className="text-primary/20 mb-6 h-12 w-12" />
             <p className="text-foreground mb-8 text-lg leading-relaxed md:text-xl">
               {testimonials[currentIndex].quote}
@@ -82,7 +82,7 @@ export function TestimonialsSection() {
           <div className="mt-8 flex items-center justify-center gap-4">
             <button
               onClick={prevTestimonial}
-              className="bg-background border-border text-foreground hover:bg-muted flex h-12 w-12 items-center justify-center rounded-full border transition-colors"
+              className="bg-background border-border text-foreground hover:bg-border flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border transition-colors"
               aria-label="Previous testimonial"
             >
               <ChevronLeft className="h-5 w-5" />
@@ -92,7 +92,7 @@ export function TestimonialsSection() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`h-2 w-2 rounded-full transition-colors ${
+                  className={`h-2 w-2 cursor-pointer rounded-full transition-colors ${
                     index === currentIndex ? 'bg-primary' : 'bg-muted-foreground/30'
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
@@ -101,7 +101,7 @@ export function TestimonialsSection() {
             </div>
             <button
               onClick={nextTestimonial}
-              className="bg-background border-border text-foreground hover:bg-muted flex h-12 w-12 items-center justify-center rounded-full border transition-colors"
+              className="bg-background border-border text-foreground hover:bg-border flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border transition-colors"
               aria-label="Next testimonial"
             >
               <ChevronRight className="h-5 w-5" />

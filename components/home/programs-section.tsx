@@ -53,20 +53,20 @@ export function ProgramsSection() {
               href={program.href}
               className="group bg-background border-border hover:border-primary/50 relative overflow-hidden rounded border transition-colors"
             >
-              <div className="relative aspect-[3/2] overflow-hidden">
+              <div className="relative aspect-3/2 overflow-hidden">
                 <Image
                   src={program.image || '/placeholder.svg'}
                   alt={program.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="bg-background/60 group-hover:bg-background/40 absolute inset-0 transition-colors" />
+                <div className="absolute inset-0 bg-black/50 transition-colors group-hover:bg-black/40" />
               </div>
               <div className="absolute inset-0 flex flex-col justify-end p-6">
-                <h3 className="text-foreground group-hover:text-primary text-xl font-bold transition-colors">
+                <h3 className="group-hover:text-primary text-xl font-bold text-white transition-colors">
                   {program.title}
                 </h3>
-                <p className="text-muted-foreground mt-2 line-clamp-2 text-sm">{program.description}</p>
+                <p className="mt-2 line-clamp-2 text-sm text-zinc-300">{program.description}</p>
                 <div className="text-primary mt-4 flex items-center text-sm font-medium">
                   <span>Learn More</span>
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -78,7 +78,7 @@ export function ProgramsSection() {
 
         <div className="mt-12 text-center">
           <Link href="/contact">
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="default">
               Book a Free Trial Session
             </Button>
           </Link>

@@ -64,21 +64,21 @@ export function HallOfFameSection() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {champions.map((champion) => (
             <div key={champion.name} className="group bg-card border-border relative overflow-hidden rounded border">
-              <div className="relative aspect-[3/4] overflow-hidden">
+              <div className="relative aspect-3/4 overflow-hidden">
                 <Image
                   src={champion.image || '/placeholder.svg'}
                   alt={champion.name}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="from-background via-background/20 absolute inset-0 bg-gradient-to-t to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />
               </div>
               <div className="absolute right-0 bottom-0 left-0 p-5">
                 <div className="bg-primary text-primary-foreground mb-2 inline-block rounded px-2 py-1 text-xs font-medium">
                   {champion.year}
                 </div>
-                <h3 className="text-foreground text-lg font-bold">{champion.name}</h3>
-                <p className="text-muted-foreground text-sm">{champion.achievement}</p>
+                <h3 className="text-lg font-bold text-white">{champion.name}</h3>
+                <p className="text-sm text-zinc-300">{champion.achievement}</p>
               </div>
             </div>
           ))}

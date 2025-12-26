@@ -8,7 +8,6 @@ import Link from 'next/link';
 const socialLinks = [
   { name: 'Facebook', href: '#', icon: Facebook },
   { name: 'Instagram', href: '#', icon: Instagram },
-  { name: 'Twitter', href: '#', icon: Twitter },
   { name: 'YouTube', href: '#', icon: Youtube },
 ];
 

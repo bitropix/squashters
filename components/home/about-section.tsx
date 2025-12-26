@@ -17,7 +17,7 @@ export function AboutSection() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Image */}
           <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded">
+            <div className="relative aspect-4/5 overflow-hidden rounded">
               <Image
                 src="/professional-squash-coach-training-athlete-in-mode.jpg"
                 alt="Coach Ashraf training a student"

@@ -57,7 +57,7 @@ export function LatestBlogsSection() {
               href={`/blogs/${blog.slug}`}
               className="group bg-background border-border hover:border-primary/50 overflow-hidden rounded border transition-colors"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-4/3 overflow-hidden">
                 <Image
                   src={blog.image || '/placeholder.svg'}
                   alt={blog.title}
