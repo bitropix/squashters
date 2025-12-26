@@ -66,7 +66,7 @@ export function OurStory() {
           {/* Image Grid */}
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
-              <div className="relative aspect-[3/4] overflow-hidden rounded">
+              <div className="relative aspect-3/4 overflow-hidden rounded">
                 <Image
                   src="/squash-academy-early-days-vintage-training-photo.jpg"
                   alt="Early days of the academy"
@@ -92,7 +92,7 @@ export function OurStory() {
                   className="object-cover"
                 />
               </div>
-              <div className="relative aspect-[3/4] overflow-hidden rounded">
+              <div className="relative aspect-3/4 overflow-hidden rounded">
                 <Image
                   src="/group-squash-training-session-team-photo.jpg"
                   alt="Group training session"

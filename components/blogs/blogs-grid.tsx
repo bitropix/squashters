@@ -156,7 +156,7 @@ export function BlogsGrid() {
                 href={`/blogs/${blog.slug}`}
                 className="group bg-card border-border hover:border-primary/50 relative overflow-hidden rounded border transition-colors"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative aspect-16/10 overflow-hidden">
                   <Image
                     src={blog.image || '/placeholder.svg'}
                     alt={blog.title}
@@ -206,7 +206,7 @@ export function BlogsGrid() {
               href={`/blogs/${blog.slug}`}
               className="group bg-card border-border hover:border-primary/50 overflow-hidden rounded border transition-colors"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-4/3 overflow-hidden">
                 <Image
                   src={blog.image || '/placeholder.svg'}
                   alt={blog.title}
